@@ -83,10 +83,9 @@ class ShortCode
     }
 }
 
+$response = wp_remote_get('http://localhost/rest-api/wp-json/ra/v1/products/');
 global $wpdb;
 
-global $success_msg;
-global $error_msg;
 $table_name = $wpdb->prefix . 'projects';
 
 
